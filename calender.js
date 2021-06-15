@@ -1,6 +1,4 @@
 
-
-
 let dates = new Date();
 function renderDate() {
 
