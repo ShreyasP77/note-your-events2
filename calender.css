@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+body{
+    margin: 0;
+font-family: "Lato","sans-serif";
+/* background-color:#dc4838; */
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+.wrapper{
+    display: flex;
+    width:100vw;
+    height:100vh;
+    /* background-color:#aadbf0; */
+    
+}
+.calender{
+     margin: auto; 
+    width:600px;
+    background-color: white;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0,0.2);
+
+}
+.month{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #2ecc70;
+    color: white;
+    padding: 40px 30px;
+
+    
+}
+.weekends{
+    background-color: #27ae60;
+    color: white;
+    display: flex;
+    padding: 5px 0;
+}
+
+.days{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 100;
+    padding: 10px 0;
+}
+.days div{
+    margin-bottom:10px ;
+    padding: 10px 0;
+    transition: all 0.4ms;
+    font-weight: 500;
+}
+.weekends div,
+.days div{
+    width: 14.28%;
+    text-align: center;
+}
+
+.days div:hover{
+    background-color: #dfe6e9;
+    cursor: pointer;
+}
+.today{
+    background-color: #27ae60;
+    color: white;
+}
+
+.prev_date,.next_date{
+    color: rgb(132, 133, 133);
+}
+#month{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.prev, .next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 1, 0, 0.049);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.prev:hover,
+.next:hover{
+    background-color: rgba(0, 10, 0, 0.1);
+    cursor: pointer;
+}
+
+.task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+     
+    font-size: larger;
+    padding: 7px 0 ;
+    background-color:#dce9ee;
+  
+}
+
+
+.task-content{
+background-color: #f5f7f8;
+height: 20vh;
+width: 100%;
+overflow-y: scroll;
+overflow-x: auto;
+
+
+}
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+.task-content::-webkit-scrollbar, 
+.context::-webkit-scrollbar{
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.task-content, .context{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td .task-header{
+    font-weight: bolder;
+    font-family: 'Baloo Tammudu 2', cursive;    
+    padding:5px 0 1px 4px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    
+}
+td .task-body{
+    font-size: 14px;
+    font-family: "Lato","sans-serif";
+
+    padding:0 0 3px 4px;    
+}
+.task-card:nth-child(odd){
+   
+    background-color: #ffffcc;
+    border-left: 6px solid #ffeb3b;
+    cursor: pointer;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0,0.2);
+}
+.task-card:nth-child(even){
+
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0,0.2);
+  cursor: pointer;
+}
+
+.addDateToNotes{
+    display:flex;
+    justify-content:center; 
+    align-items:center;
+    margin-top:5px;
+    cursor: pointer;
+}
+
+.task-card-Replace{
+    background-color: #fee7e8;
+    border-left: 6px solid #f32148;
+    cursor:pointer;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0,0.2);
+    
+}
+
+.addnewBgColor{
+    background-color:#c1edd3;
+    border-radius: 11%;
+}
+
+.mybtn-right{
+	text-align: right;
+}
+
+
+
